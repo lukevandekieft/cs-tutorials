@@ -2,11 +2,14 @@
 using System; // Needed for Console
 
 class Program {
-  // Entry Point
-  static void Main()
-  {
-    Console.WriteLine("Give me a number and I will double it for you!");
+  static void DoubleNumber() {
     int yourNumber = int.Parse(Console.ReadLine()) * 2;
     Console.WriteLine("I doubled your number to " + yourNumber);
+  }
+  // Entry Point
+  static void Main() {
+    Console.WriteLine("Give me a number and I will double it for you!");
+    DoubleNumber();
+
   }
 }
